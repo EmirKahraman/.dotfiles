@@ -23,7 +23,7 @@ sleep 1
 # 1. Uncomment to restore last saved wallpaper
 # xargs xwallpaper --stretch < ~/.cache/wall &
 # 2. Uncomment to set wallpaper with nitrogen
-nitrogen --restore &
+# nitrogen --restore &
 
 # Touchpad Settings
 xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Tapping Enabled" 1

@@ -8,7 +8,7 @@
 #   ██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████║   ██║   ██║  ██║██║  ██║   ██║██╗███████║██║  ██║
 #   ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
 #
-#   Emir Kahraman (2024)                                             ~/.config/qtile/autostart.sh
+#   Emir Kahraman (2024)                                              ~/.config/hypr/autostart.sh
 #   an autostart script for Hyprland
 
 
@@ -24,7 +24,7 @@ sleep 1
 # 2. Uncomment to set a random wallpaper on login
 # find /usr/share/backgrounds/dtos-backgrounds/ -type f | shuf -n 1 | xargs xwallpaper --stretch &
 # 3. Uncomment to set wallpaper with nitrogen
-nitrogen --restore &
+# nitrogen --restore &
 
 # Touchpad Settings
 xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Tapping Enabled" 1
