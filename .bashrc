@@ -133,6 +133,9 @@ alias gitpush='git push origin main'
 # wifi 
 alias wificonnect_DUDE='nmcli device wifi connect DUDE password' #just being lazy
 
+# apps
+alias opera='opera & disown & exit'
+
 # termbin
 alias tb="nc termbin.com 9999"
 
