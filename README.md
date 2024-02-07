@@ -56,4 +56,7 @@ figlet
 
 
 ### thanks to
-dt,ml4v,n6v26r,zdyantb
+https://gitlab.com/dwt1/dotfiles
+https://github.com/n6v26r/.dotfiles
+https://github.com/zDyanTB/HyprNova
+ml4v
