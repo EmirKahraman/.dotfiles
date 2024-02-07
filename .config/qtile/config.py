@@ -131,10 +131,10 @@ mouse = [
 
 groups = [
     Group("1", layout='columns', spawn='kitty'),
-    Group("2", layout='columns'),
-    Group("3", layout='columns'),
+    Group("2", layout='tile'),
+    Group("3", layout='tile'),
     Group("4", layout='tile'),
-    Group("5", layout='tile'),
+    Group("5", layout='columns'),
     Group("6", layout='columns'),
     Group("7", layout='columns'),
     Group("8", layout='columns'),
@@ -191,8 +191,8 @@ Color15=(colordict['colors']['color15'])
 
 layout_theme = {
     "border_width": 2,
-    "margin": 5,
-    "border_focus": Color5,
+    "margin": 3,
+    "border_focus": Color6,
     "border_normal": Color1,
     "single_border_width": 3                
 }
@@ -205,14 +205,20 @@ layouts = [
     layout.Tile(
         shift_windows=True,
         border_width = 0,
-        margin = 0,
+        margin = 2,
         ratio = 0.3,
         ),
     layout.Max(
         border_width = 0,
-        margin = 0,
+        margin = 2,
         ),
-    layout.Columns(**layout_theme),
+    layout.Columns(
+        border_width = 1,
+        margin = 3,
+        border_focus = Color6,
+        border_normal = Color1,
+        single_border_width = 3
+    ),
 
     #layout.Bsp(**layout_theme),
     #layout.Floating(**layout_theme)
@@ -295,8 +301,7 @@ decor_right = {
 widget_list = [
     widget.Prompt(
         font = "Ubuntu Mono",
-        fontsize=14,
-        foreground = Color7
+        fontsize=14
         ),
     widget.GroupBox(
         #foreground = Color7,
@@ -307,43 +312,43 @@ widget_list = [
         padding_y = 0,
         padding_x = 1,
         borderwidth = 2,
-        active = Color1,
-        inactive = Color7,
+        active = Color7,
+        inactive = Color1,
         rounded = False,
-        highlight_color = Color6,
+        highlight_color = Color1,
         highlight_method = "line",
-        #this_current_screen_border = Color1,
-        #this_screen_border = Color5,
-        #other_current_screen_border = Color1,
-        #other_screen_border = Color6,
-        urgent_border = Color5,
+        this_current_screen_border = Color1,
+        this_screen_border = Color6,
+        other_current_screen_border = Color6,
+        other_screen_border = Color6,
+        urgent_border = Color6,
         ),
     widget.TextBox(
         text = '|',
         font = "Ubuntu Mono",
-        foreground = Color7,
+        foreground = Color8,
         padding = 2,
         fontsize = 14
         ),
     widget.CurrentLayoutIcon(
         # custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
-        foreground = Color1,
+        foreground = Color8,
         padding = 4,
         scale = 0.6
         ),
     widget.CurrentLayout(
-        foreground = Color1,
+        foreground = Color8,
         padding = 5
         ),
     widget.TextBox(
         text = '|',
         font = "Ubuntu Mono",
-        foreground = Color1,
+        foreground = Color8,
         padding = 2,
         fontsize = 14
         ),
     widget.WindowName(
-        foreground = Color8,
+        foreground = Color1,
         max_chars = 40
         ),
 
@@ -353,7 +358,7 @@ widget_list = [
     widget.Clock(
         #foreground = colors[8],
         format = "%a, %b %d - %H:%M",
-        timezone = ('Turkey'), 
+        timezone = ('Turkey')
         ),
     widget.Spacer(length = bar.STRETCH),
     
@@ -363,11 +368,6 @@ widget_list = [
         format=('{down:6.2f}{down_suffix:<2}↓↑{up:6.2f}{up_suffix:<2}'),
         foreground = Color1,
         ),
-    #widget.Spacer(length = 4),
-    #widget.Wlan(
-    #    foreground=colors[1],
-    #    format='{essid} {percent:2.0%}',
-    #    ),
     widget.Spacer(length = 4),
     widget.UPowerWidget(
         foreground = Color1,
@@ -375,25 +375,25 @@ widget_list = [
     widget.Spacer(length = 4),
     widget.DF(
         visible_on_warn=False,
-        foreground = Color8,
+        foreground = Color1,
         warn_color = Color6,
         format="Mem: {uf}{m}",
         decorations=[
             BorderDecoration(
-                colour = Color6,
+                colour = Color1,
                 border_width = [0, 0, 2, 0],
                 )
             ],
     ),
     widget.Spacer(length = 6),
     widget.Volume(
-        foreground = Color6,
+        foreground = Color1,
         #emoji = True,
         #emoji_list = [],
         fmt = 'Vol: {}',
         decorations=[
             BorderDecoration(
-                colour = colors[1],
+                colour = Color1,
                 border_width = [0, 0, 2, 0],
                 )
             ],
@@ -401,11 +401,11 @@ widget_list = [
     widget.Spacer(length = 6),
     widget.KeyboardLayout(
         configured_keyboards=['tr'],
-        foreground = Color6,
+        foreground = Color1,
         fmt = 'Kbd: {}',
         decorations=[
             BorderDecoration(
-                colour = Color7,
+                colour = Color1,
                 border_width = [0, 0, 2, 0],
                 )
             ],
