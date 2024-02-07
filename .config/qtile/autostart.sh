@@ -9,7 +9,7 @@
 #   ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
 #
 #   Emir Kahraman (2024)                                             ~/.config/qtile/autostart.sh
-#   an autostart program for Qtile
+#   an autostart script for Qtile
 
 
 ### AUTOSTART PROGRAMS ###

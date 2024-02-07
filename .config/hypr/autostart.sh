@@ -9,7 +9,7 @@
 #   ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
 #
 #   Emir Kahraman (2024)                                             ~/.config/qtile/autostart.sh
-#   an autostart program for Hyprland
+#   an autostart script for Hyprland
 
 
 ### AUTOSTART PROGRAMS ###
