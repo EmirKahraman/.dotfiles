@@ -51,6 +51,7 @@ btop
 ## fun
 neofetch
 cmatrix
+figlet
 ```
 
 

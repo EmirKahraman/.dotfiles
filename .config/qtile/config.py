@@ -37,7 +37,6 @@ from qtile_extras.widget.decorations import BorderDecoration
 from qtile_extras.widget.decorations import RectDecoration
 from qtile_extras.widget.decorations import PowerLineDecoration
 
-import colors
 
 
 # Set Defaults
@@ -356,7 +355,6 @@ widget_list = [
     
     widget.Spacer(length = bar.STRETCH),
     widget.Clock(
-        #foreground = colors[8],
         format = "%a, %b %d - %H:%M",
         timezone = ('Turkey')
         ),
