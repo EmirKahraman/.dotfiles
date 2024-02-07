@@ -59,4 +59,4 @@ figlet
 https://gitlab.com/dwt1/dotfiles
 https://github.com/n6v26r/.dotfiles
 https://github.com/zDyanTB/HyprNova
-ml4v
+gml4v
