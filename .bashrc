@@ -135,6 +135,7 @@ alias wificonnect_DUDE='nmcli device wifi connect DUDE password' #just being laz
 
 # apps
 alias opera='opera & disown & exit'
+alias fewal='feh ~/Wallpapers & disown & exit'
 
 # termbin
 alias tb="nc termbin.com 9999"
