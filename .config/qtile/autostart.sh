@@ -11,6 +11,8 @@
 #   Emir Kahraman (2024)                                             ~/.config/qtile/autostart.sh
 #   an autostart script for Qtile
 
+#   XKeys: https://github.com/qtile/qtile/blob/master/libqtile/backend/x11/xkeysyms.py
+
 
 ### AUTOSTART PROGRAMS ###
 picom --daemon &                # controls transperancy
@@ -24,12 +26,8 @@ sleep 1
 nitrogen --restore &
 
 # Touchpad Settings
-xinput set-prop 11 344 1
-xinput set-prop 11 317 1
-
-xinput set-prop 12 346 1
-xinput set-prop 12 317 1
-
+xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Tapping Enabled" 1
+xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Natural Scrolling Enabled" 1
 
 # Set Keyboard
 setxkbmap tr

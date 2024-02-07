@@ -27,8 +27,8 @@ sleep 1
 nitrogen --restore &
 
 # Touchpad Settings
-xinput set-prop 12 346 1
-xinput set-prop 12 317 1
+xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Tapping Enabled" 1
+xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Natural Scrolling Enabled" 1
 
 # Set Keyboard
 setxkbmap tr

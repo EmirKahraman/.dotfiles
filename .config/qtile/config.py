@@ -272,7 +272,7 @@ decor_left = {
             # path="back_slash"
         ),
         RectDecoration(
-            colour = Color1,
+            colour = Color0,
         )
     ],
 }
@@ -296,9 +296,10 @@ widget_list = [
     widget.Prompt(
         font = "Ubuntu Mono",
         fontsize=14,
-        foreground = Color1
+        foreground = Color7
         ),
     widget.GroupBox(
+        #foreground = Color7,
         #background = Color0,
         fontsize = 11,
         margin_y = 5,
@@ -306,43 +307,43 @@ widget_list = [
         padding_y = 0,
         padding_x = 1,
         borderwidth = 2,
-        active = Color5,
-        inactive = Color15,
+        active = Color1,
+        inactive = Color7,
         rounded = False,
-        highlight_color = Color1,
+        highlight_color = Color6,
         highlight_method = "line",
-        this_current_screen_border = Color1,
-        this_screen_border = Color5,
-        other_current_screen_border = Color1,
-        other_screen_border = Color7,
+        #this_current_screen_border = Color1,
+        #this_screen_border = Color5,
+        #other_current_screen_border = Color1,
+        #other_screen_border = Color6,
         urgent_border = Color5,
         ),
     widget.TextBox(
         text = '|',
         font = "Ubuntu Mono",
-        foreground = colors[1],
+        foreground = Color7,
         padding = 2,
         fontsize = 14
         ),
     widget.CurrentLayoutIcon(
         # custom_icon_paths = [os.path.expanduser("~/.config/qtile/icons")],
-        foreground = colors[1],
+        foreground = Color1,
         padding = 4,
         scale = 0.6
         ),
     widget.CurrentLayout(
-        foreground = colors[1],
+        foreground = Color1,
         padding = 5
         ),
     widget.TextBox(
         text = '|',
         font = "Ubuntu Mono",
-        foreground = colors[1],
+        foreground = Color1,
         padding = 2,
         fontsize = 14
         ),
     widget.WindowName(
-        foreground = colors[8],
+        foreground = Color8,
         max_chars = 40
         ),
 
@@ -360,7 +361,7 @@ widget_list = [
     
     widget.Net(
         format=('{down:6.2f}{down_suffix:<2}↓↑{up:6.2f}{up_suffix:<2}'),
-        foreground = colors[1],
+        foreground = Color1,
         ),
     #widget.Spacer(length = 4),
     #widget.Wlan(
@@ -369,24 +370,24 @@ widget_list = [
     #    ),
     widget.Spacer(length = 4),
     widget.UPowerWidget(
-        foreground = colors[1],
+        foreground = Color1,
         ),
     widget.Spacer(length = 4),
     widget.DF(
         visible_on_warn=False,
-        foreground = colors[8],
-        warn_color = colors[3],
+        foreground = Color8,
+        warn_color = Color6,
         format="Mem: {uf}{m}",
         decorations=[
             BorderDecoration(
-                colour = colors[1],
+                colour = Color6,
                 border_width = [0, 0, 2, 0],
                 )
             ],
     ),
     widget.Spacer(length = 6),
     widget.Volume(
-        foreground = colors[8],
+        foreground = Color6,
         #emoji = True,
         #emoji_list = [],
         fmt = 'Vol: {}',
@@ -400,11 +401,11 @@ widget_list = [
     widget.Spacer(length = 6),
     widget.KeyboardLayout(
         configured_keyboards=['tr'],
-        foreground = colors[8],
+        foreground = Color6,
         fmt = 'Kbd: {}',
         decorations=[
             BorderDecoration(
-                colour = colors[1],
+                colour = Color7,
                 border_width = [0, 0, 2, 0],
                 )
             ],
@@ -443,7 +444,7 @@ follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(
-    border_focus=colors[8],
+    border_focus=Color7,
     border_width=2,
     float_rules=[
         # Run the utility of `xprop` to see the wm class and name of an X client.
