@@ -24,7 +24,7 @@ sleep 1
 # 2. Uncomment to set wallpaper with nitrogen
 # nitrogen --restore &
 # 3. Uncomment to set wallpaper with pywal
-wal -i ~/Wallpapers/active
+wal -i $HOME/Wallpapers/active/
 
 # Touchpad Settings
 xinput set-prop "UNIW0001:00 093A:0274 Touchpad" "libinput Tapping Enabled" 1
