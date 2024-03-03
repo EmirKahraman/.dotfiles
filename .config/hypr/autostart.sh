@@ -9,12 +9,13 @@
 #   ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝╚═╝╚══════╝╚═╝  ╚═╝
 #
 #   Emir Kahraman (2024)                                             ~/.config/qtile/autostart.sh
-#   an autostart program for Qtile
+#   an autostart program for Hyprland
 
 
 ### AUTOSTART PROGRAMS ###
-picom --daemon &                # controls transperancy
-#/usr/bin/emacs --daemon &      # if you want to use emacs again uncomment
+waybar
+#picom --daemon &                # controls transperancy
+#/usr/bin/emacs --daemon &       # if you want to use emacs again uncomment
 sleep 1
 
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
