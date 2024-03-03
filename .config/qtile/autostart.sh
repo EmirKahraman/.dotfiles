@@ -13,10 +13,8 @@
 
 
 ### AUTOSTART PROGRAMS ###
-# lxsession &
 picom --daemon &
 /usr/bin/emacs --daemon &
-# nm-applet &
 sleep 1
 
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
