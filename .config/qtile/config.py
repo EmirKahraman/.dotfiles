@@ -45,7 +45,7 @@ import colors
 
 mod = "mod4"                # SUPER KEY
 myTerm = "kitty"            # Default terminal
-myBrowser = "firefox"         # Default browser
+myBrowser = "opera"         # Default browser
 
 home = str(Path.home())     # Get home path
 
@@ -132,10 +132,10 @@ mouse = [
 
 groups = [
     Group("1", layout='columns', spawn='kitty'),
-    Group("2", layout='tile'),
-    Group("3", layout='tile'),
-    Group("4", layout='columns'),
-    Group("5", layout='columns'),
+    Group("2", layout='columns'),
+    Group("3", layout='columns'),
+    Group("4", layout='tile'),
+    Group("5", layout='tile'),
     Group("6", layout='columns'),
     Group("7", layout='columns'),
     Group("8", layout='columns'),
