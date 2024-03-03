@@ -105,9 +105,10 @@ keys = [
     ## Apps
     Key([mod], "Return", lazy.spawn(myTerm), desc="Launch terminal"),
     Key([mod, "shift"], "Return", lazy.spawn("rofi -show drun"), desc="Launch Rofi"),
-    Key([mod], "b", lazy.spawn(myBrowser), desc="Launch Browser"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-   
+    Key([mod], "b", lazy.spawn(myBrowser), desc="Launch Browser"),
+    Key([mod], "c", lazy.spawn("code"), desc="Launch Visual Studio Code"),   
+
     ## Fn keys
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
