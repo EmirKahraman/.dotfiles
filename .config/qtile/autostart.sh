@@ -12,15 +12,12 @@
 #       
 
 
-COLORSCHEME=MonokaiPro
-
 ### AUTOSTART PROGRAMS ###
 # lxsession &
 picom --daemon &
 /usr/bin/emacs --daemon &
 # nm-applet &
 sleep 1
-# conky -c "$HOME"/.config/conky/qtile/01/"$COLORSCHEME".conf || echo "Couldn't start conky."
 
 ### UNCOMMENT ONLY ONE OF THE FOLLOWING THREE OPTIONS! ###
 # 1. Uncomment to restore last saved wallpaper
