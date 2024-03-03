@@ -124,7 +124,8 @@ alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
 
 # git
 alias gitstat='git status'
-#alias gitpushmain='git push origin main'
+alias gitcommit='git commit -m'
+alias gitpush='git push origin main'
 
 # termbin
 alias tb="nc termbin.com 9999"
