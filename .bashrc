@@ -9,7 +9,7 @@
 #   Emir Kahraman (2024)                      ~/.bashrc
 #      
 
-### Source global definitions                                       #DEFAULT config
+### Source global definitions                                      #DEFAULT config
 if \[ -f /etc/bashrc \]; 
 then        
     . /etc/bashrc 
@@ -30,7 +30,7 @@ for i in /etc/profile.d/*.sh; do
 [[ $- != *i* ]] && return
 [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
 
-### EXPORT
+### EXPORT ###
 export TERM="xterm-256color"                      # getting proper colors
 export HISTCONTROL=ignoredups:erasedups           # no duplicate entries
 export ALTERNATE_EDITOR=""                        # setting for emacsclient
@@ -71,7 +71,7 @@ fi
 
 export PATH="${PATH}:${HOME}/.local/bin/"
 
-### SHOPT
+### SHOPT ###
 shopt -s autocd # change to named directory
 shopt -s cdspell # autocorrects cd misspellings
 shopt -s cmdhist # save multi-line commands in history as single line
@@ -128,7 +128,7 @@ alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 # termbin
 alias tb="nc termbin.com 9999"
 
-### MESSAGES
+### MESSAGES ###
 figlet -f 'Georgia11.flf' Welcome
 
 #Done
