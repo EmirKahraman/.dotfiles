@@ -26,6 +26,9 @@ for i in /etc/profile.d/*.sh; do
         fi
     done
 
+### COLORS ###
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
@@ -44,7 +47,7 @@ set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-### PATH
+### PATH ###
 if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
@@ -106,7 +109,7 @@ up () {
 
 # Changing "ls"
 alias ls='ls -a --color=always --group-directories-first' # my preferred listing
-alias la='ls -la --color=always --group-directories-first'  # all files and dirs
+alias la='ls -la --color=always --group-directories-first' # all files and dirs
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -127,10 +130,13 @@ alias gitstat='git status'
 alias gitcommit='git commit -m'
 alias gitpush='git push origin main'
 
+# wifi 
+alias wificonnect_DUDE='nmcli device wifi connect DUDE password' #just being lazy
+
 # termbin
 alias tb="nc termbin.com 9999"
 
 ### MESSAGES ###
 figlet -f 'Georgia11.flf' Welcome
 
-#Done
+# Done

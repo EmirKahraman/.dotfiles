@@ -26,7 +26,7 @@ sleep 1
 nitrogen --restore &
 
 # Touchpad Settings
-xinput set-prop 11 346 1
+xinput set-prop 11 344 1
 xinput set-prop 11 317 1
 
 xinput set-prop 12 346 1
