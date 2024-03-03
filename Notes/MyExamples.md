@@ -1,7 +1,10 @@
-#### mytext.txt ####
+MyExamples.md
+===
 
-# 1 
-# 'ANSI Shadow.flf'
+My favorite fonts for figlet program
+
+
+'ANSI Shadow.flf'
 ```
 ███╗   ██╗███████╗ ██████╗ ██╗    ██╗
 ████╗  ██║██╔════╝██╔═══██╗██║    ██║
@@ -17,9 +20,8 @@
 ╚═╝╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝
 ```
 
-
-# 2 
-# 'Big Money-ne.flf'
+ 
+'Big Money-ne.flf'
 ```
  /$$   /$$                                  
 | $$$ | $$                                  
@@ -32,8 +34,7 @@
 ```
 
 
-# 3
-# 'Rowan Cap.flf'
+'Rowan Cap.flf'
 ```
    dMP dMP dMP .aMMMb  .dMMMb  .dMMMb  dMP dMP dMMMMb 
   dMP dMP dMP dMP"dMP dMP" VP dMP" VP dMP dMP dMP.dMP 
@@ -43,8 +44,7 @@ VMMMPVMMP" dMP dMP  VMMMP"  VMMMP"  VMMMP" dMP
 ```
 
 
-# 4
-# 'Slant.flf'
+'Slant.flf'
 ```
       __               __  
      / /_  ____ ______/ /_ 
@@ -54,8 +54,7 @@ VMMMPVMMP" dMP dMP  VMMMP"  VMMMP"  VMMMP" dMP
 ```
 
 
-# 5
-# 'Standard.flf'
+'Standard.flf'
 ```
    _               _              
   | |__   __ _ ___| |__  _ __ ___ 
@@ -65,8 +64,7 @@ VMMMPVMMP" dMP dMP  VMMMP"  VMMMP"  VMMMP" dMP
 ```                               
 
 
-# 6
-# 'Stacey.flf'
+'Stacey.flf'
 ```
 __________________   ____   _______     ____________________________________
 7  7  77     77  7   7  7   7     7     7      77  7  77     77  _  77     7
@@ -77,8 +75,7 @@ __________________   ____   _______     ____________________________________
 ```                                                                         
 
 
-# 7
-# 'Georgia11.flf'                                                                  
+'Georgia11.flf'                                                                  
 ```
                              ,,                                            
 `7MMF'     A     `7MF'     `7MM                                            
