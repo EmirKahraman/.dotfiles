@@ -166,26 +166,24 @@ for i in groups:
 # Pywal Colors - Preconfigured Colors
 # --------------------------------------------------------
 
-colors = colors.MonokaiPro
-
-#colors = os.path.expanduser('~/.cache/wal/colors.json')
-#colordict = json.load(open(colors))
-#Color0=(colordict['colors']['color0'])
-#Color1=(colordict['colors']['color1'])
-#Color2=(colordict['colors']['color2'])
-#Color3=(colordict['colors']['color3'])
-#Color4=(colordict['colors']['color4'])
-#Color5=(colordict['colors']['color5'])
-#Color6=(colordict['colors']['color6'])
-#Color7=(colordict['colors']['color7'])
-#Color8=(colordict['colors']['color8'])
-#Color9=(colordict['colors']['color9'])
-#Color10=(colordict['colors']['color10'])
-#Color11=(colordict['colors']['color11'])
-#Color12=(colordict['colors']['color12'])
-#Color13=(colordict['colors']['color13'])
-#Color14=(colordict['colors']['color14'])
-#Color15=(colordict['colors']['color15'])
+colors = os.path.expanduser('~/.cache/wal/colors.json')
+colordict = json.load(open(colors))
+Color0=(colordict['colors']['color0'])
+Color1=(colordict['colors']['color1'])
+Color2=(colordict['colors']['color2'])
+Color3=(colordict['colors']['color3'])
+Color4=(colordict['colors']['color4'])
+Color5=(colordict['colors']['color5'])
+Color6=(colordict['colors']['color6'])
+Color7=(colordict['colors']['color7'])
+Color8=(colordict['colors']['color8'])
+Color9=(colordict['colors']['color9'])
+Color10=(colordict['colors']['color10'])
+Color11=(colordict['colors']['color11'])
+Color12=(colordict['colors']['color12'])
+Color13=(colordict['colors']['color13'])
+Color14=(colordict['colors']['color14'])
+Color15=(colordict['colors']['color15'])
 
 
 # Set Layout Defaults
@@ -194,8 +192,8 @@ colors = colors.MonokaiPro
 layout_theme = {
     "border_width": 2,
     "margin": 5,
-    "border_focus": colors[8],
-    "border_normal": colors[0],
+    "border_focus": Color5,
+    "border_normal": Color1,
     "single_border_width": 3                
 }
 
@@ -272,6 +270,9 @@ decor_left = {
             # path="rounded_left"
             # path="forward_slash"
             # path="back_slash"
+        ),
+        RectDecoration(
+            colour = Color1,
         )
     ],
 }
@@ -295,25 +296,26 @@ widget_list = [
     widget.Prompt(
         font = "Ubuntu Mono",
         fontsize=14,
-        foreground = colors[1]
+        foreground = Color1
         ),
     widget.GroupBox(
+        #background = Color0,
         fontsize = 11,
         margin_y = 5,
         margin_x = 5,
         padding_y = 0,
         padding_x = 1,
         borderwidth = 2,
-        active = colors[8],
-        inactive = colors[1],
+        active = Color5,
+        inactive = Color15,
         rounded = False,
-        highlight_color = colors[2],
+        highlight_color = Color1,
         highlight_method = "line",
-        this_current_screen_border = colors[1],
-        this_screen_border = colors[8],
-        other_current_screen_border = colors[1],
-        other_screen_border = colors[8],
-        urgent_border = colors[3],
+        this_current_screen_border = Color1,
+        this_screen_border = Color5,
+        other_current_screen_border = Color1,
+        other_screen_border = Color7,
+        urgent_border = Color5,
         ),
     widget.TextBox(
         text = '|',
